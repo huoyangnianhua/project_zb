@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度首页</title>
+
+    <style>
+        body{margin:0px;padding:0px;}
+        #table2{position: absolute;left: 500px;top:520px;}
+        #table3{position: absolute;left: 400px;top:550px;}
+        #tr1{height: 50px;}
+        #tr1_1{width: 310px;}
+        #tr1_2{width: 170px;}
+        #tr1_3{width: 250px;}
+        #tr1_4{width: 80px;}
+        #tr1_13{background-color: rgba(61,131,207,0.68); color: white;}
+
+        #tr2{height: 70px;}
+        #tr2_1{width: 310px;}
+        #tr2_2{width: 170px;}
+        #tr2_3{width: 270px;}
+        #tr3{height: 40px;width: 100%;}
+        #tr4{height: 50px;}
+        #tr4_1{width: 310px;}
+        #tr4_2{width: 500px;}
+        #tr4_3{width: 80px;}
+        #input1{width:550px;height:40px;}
+        #button1{background-color: rgba(61,131,207,0.68); color: white; width: 180px;height: 46px;}
+        #tr5{height: 180px;width: 100%;}
+        #tr6{height: 60px;width: 100%;}
+        #tr6_1{position: absolute;left: 650px;top: 430px;}
+        #tr7{height: 10px;width: 100%;}
+        #tr7_1{position: absolute;left: 665px;top: 490px;}
+        .c1{color: black;}
+        .c2{color: darkgray;}
+    </style>
+</head>
+<body>
+<!--本项目一共制作三个表格（table）区域-->
+<!--下面的table为导航栏至百度二维码区域-->
+    <table border="0" cellspacing="0" cellpadding="3">
+        <!--下面的tr制作导航栏那行-->
+        <tr id="tr1">
+            <td id="tr1_1"></td>
+            <td id="tr1_2"></td>
+            <td id="tr1_3"></td>
+            <td id="tr1_4"></td>
+            <td id="tr1_5" align="center"><a href="http://news.baidu.com/" class="c1"/>新闻</td>
+            <td id="tr1_6" align="center"><a href="https://www.hao123.com/" class="c1"/>好123</td>
+            <td id="tr1_7"><a href="https://www.hao123.com/" class="c1"/>地图</td>
+            <td id="tr1_8"><a href="https://www.hao123.com/" class="c1"/>视频</td>
+            <td id="tr1_9"><a href="https://www.hao123.com/" class="c1"/>贴吧</td>
+            <td id="tr1_10"><a href="https://www.hao123.com/" class="c1"/>学术</td>
+            <td id="tr1_11"><a href="https://www.hao123.com/" class="c1"/>登录</td>
+            <td id="tr1_12"><a href="https://www.hao123.com/" class="c1"/>设置</td>
+            <td id="tr1_13">更多产品</td>
+        </tr>
+        <!--下面的tr是制作百度图标那行-->
+        <tr id="tr2">
+            <td id="tr2_1"></td>
+            <td id="tr2_2"></td>
+            <td id="tr2_3"><a href="https://www.baidu.com/s?wd=%E5%86%AC%E8%87%B3&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs"><img src="imgs/baidu.jpg"/></a></td>
+            <td colspan="11"></td>
+        </tr>
+        <!--下面的tr是制作图标下面的空白行-->
+        <tr id="tr3">
+            <td></td>
+        </tr>
+        <!--下面的tr是制作搜索那行-->
+        <tr id="tr4">
+            <td id="tr4_1" colspan="1"></td>
+            <td id="tr4_2" colspan="3"><input id="input1" type="text" name="搜索" /></td>
+            <td id="tr4_3" colspan="2"><button id="button1" type="submit" >百度一下</button></td>
+            <td colspan="7"></td>
+        </tr>
+        <!--下面的tr是制作中间的空白行-->
+        <tr id="tr5">
+            <td></td>
+        </tr>
+        <!--下面的tr是制作下面的百度二维码-->
+        <tr id="tr6">
+            <td id="tr6_1"><img src="imgs/baiduEWM.jpg"/></td>
+        </tr>
+        <tr id="tr7">
+            <td id="tr7_1">百度</td>
+        </tr>
+    </table>
+<!--下面的table为关于百度导航部分-->
+    <table border="0" cellspacing="0" cellpadding="5" id="table2">
+        <tr>
+            <td><a href="https://www.baidu.com/cache/sethelp/help.html" class="c2"/>把百度设为首页</td>
+            <td><a href="http://home.baidu.com/" class="c2"/>关于百度</td>
+            <td><a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome" class="c2"/>About Baidu</td>
+            <td><a href="http://e.baidu.com/?refer=888" class="c2"/>百度推广</td>
+        </tr>
+    </table>
+<!--下面的table为百度京ICP证号部分-->
+    <table border="0" cellspacing="0" cellpadding="5" id="table3">
+        <tr>
+            <td class="c2">©2018 Baidu</td>
+            <td><a href="https://www.baidu.com/duty/" class="c2"/>使用百度前必读</td>
+            <td><a href="http://jianyi.baidu.com/" class="c2"/>意见反馈</td>
+            <td class="c2">京ICP证030173号</td>
+            <td><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" class="c2"/>京公网安备11000002000001号</td>
+        </tr>
+    </table>
+</body>
+</html>

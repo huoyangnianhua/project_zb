@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestTableQT</title>
+    <script>
+        console.log("HelloWorld");
+    </script>
+    <style>
+        #change{display: block;}
+    </style>
+</head>
+<body>
+<table border="1" width="500" cellspacing="0" cellpadding="5px" align="center">
+    <caption>课程表</caption>
+    <tr bgcolor="orange" align="center">
+        <th>星期一</th> <th>星期二</th>
+        <th>星期四</th> <th>星期五</th>
+    </tr>
+    <tr align="center">
+        <td rowspan ="2">语文</td>
+        <td>数学</td>
+        <td>英语</td>
+        <td>生物</td>
+    </tr>
+    <tr align="center">
+        <td>数学</td>
+        <td>英语</td>
+        <td>生物</td>
+    </tr>
+    <tr align="center">
+        <td colspan="4">课间活动</td>
+    </tr>
+    <tr align="center">
+        <td rowspan="2" >
+            <table border="1" cellspacing="0" cellpadding="5px" align="center">
+                <tr>
+                    <td>前半节</td>
+                    <td>后半节</td>
+                </tr>
+                <tr>
+                    <td>诗词</td>
+                    <td>古文</td>
+                </tr>
+            </table>
+        </td>
+        <td>数学</td>
+        <td>英语</td>
+        <td>生物</td>
+    </tr>
+    <tr align="center">
+        <td>数学</td>
+        <td>英语</td>
+        <td>生物</td>
+    </tr>
+</table>
+
+<p>=============================================================================================</p>
+<table border="1" cellspacing="0" cellpadding="5">
+    <tr>
+        <td>第一行第一列</td>
+        <td>第一行第二列</td>
+        <td>第一行第三列</td>
+    </tr>
+    <tr>
+        <td>第二行第一列</td>
+        <td colspan="2">
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td>第二行第二列</td>
+                        <td>第二行第二列</td>
+                    </tr>
+                    <tr>
+                        <td>第二行第二列</td>
+                        <td>第二行第二列</td>
+                    </tr>
+                </table>
+        </td>
+    </tr>
+</table>
+
+<!--HTML中行内元素与块级元素的区别-->
+<p>1.行内元素与块级函数可以相互转换，通过修改display属性值来切换块级元素和行内元素，行内元素display：inline，块级元素display：block。
+
+    2.行内元素和其他行内元素都会在一条水平线上排列，都是在同一行的；块级元素却总是会在新的一行开始排列，各个块级元素独占一行，垂直向下排列，若想使其水平方向排序，可使用左右浮动（float：left/right）让其水平方向排列。
+
+    3.行内元素不可以设置宽高，宽度高度随文本内容的变化而变化，但是可以设置行高（line-height），同时在设置外边距margin上下无效，左右有效，内填充padding上下无效，左右有效；块级元素可以设置宽高，并且宽度高度以及外边距，内填充都可随意控制。
+
+    4.块级元素可以包含行内元素和块级元素，还可以容纳内联元素和其他元素；行内元素不能包含块级元素，只能容纳文本或者其他行内元素。</p>
+<p>内联元素又名行内元素，和其对应的是块元素，都是html规范中的概念。内联元素的显示，为了帮助理解，可以形象的称为“文本模式”，即一个挨着一个，都在同一行按从左至右的顺序显示，不单独占一行。而当加入了css控制以后，块元素和内联元素的这种属性差异就不成为差异了。比如，我们完全可以把内联元素加上display:block这样的属性，让它也有每次都从新行开始的属性，即成为块元素同样我们可以把块元素加上display:inline这样的属性，让它也在一行上排列。</p>
+
+<h1>块级元素，自己独占一行</h1><span id="change">上面的标题h1为块级元素，他会把我挤下来。然后我在样式里面加入了display:block;我就变成了块级元素</span><span>另一个行级元素</span>
+</body>
+</html>
